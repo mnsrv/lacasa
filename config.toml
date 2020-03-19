@@ -1,0 +1,4 @@
+baseURL = "http://mansurov.me/"
+languageCode = "ru"
+title = "mansurov.me"
+theme = "882"
