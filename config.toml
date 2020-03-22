@@ -1,4 +1,5 @@
-baseURL = "http://lacasa.mansurov.me/"
+baseURL = "/"
 languageCode = "ru"
 title = "mansurov.me"
 theme = "882"
+sectionPagesMenu = "main"

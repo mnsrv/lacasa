@@ -20,6 +20,7 @@ body {
 
 header {
   display: flex;
+  align-items: center;
   padding: 0.5rem 1rem;
   border-bottom: 1px dashed var(--border);
   margin-bottom: 2rem;
@@ -31,6 +32,24 @@ main {
   padding: 0 1rem;
 }
 
-.logo {
+.logo__link {
+  margin-right: 2rem;
+}
+.logo__icon {
   display: block;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.menu__item.active {
+  background: red;
 }
