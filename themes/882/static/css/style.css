@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  --bg: #eff0f3;
+  --text: #000;
+  --border: #000;
+
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+header {
+  padding: 1rem;
+  border-bottom: 1px dashed var(--border);
+}
+
+main {
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: 0 1rem;
+}
