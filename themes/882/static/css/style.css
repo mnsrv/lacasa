@@ -21,7 +21,7 @@ body {
 header {
   display: flex;
   align-items: center;
-  padding: 0.5rem 1rem;
+  padding: 0 1rem;
   border-bottom: 1px dashed var(--border);
   margin-bottom: 2rem;
 }
@@ -37,6 +37,10 @@ main {
 }
 .logo__icon {
   display: block;
+}
+
+nav {
+  padding: 1rem 0;
 }
 
 nav ul {
