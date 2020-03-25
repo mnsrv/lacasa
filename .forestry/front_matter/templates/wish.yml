@@ -1,0 +1,25 @@
+---
+label: Wish
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: brand
+  label: brand
+- type: datetime
+  name: date
+  label: date
+- type: file
+  name: image
+  label: image
+- type: text
+  name: url
+  label: url
+- type: number
+  name: price
+  label: price
+- type: boolean
+  name: done
+  label: done
