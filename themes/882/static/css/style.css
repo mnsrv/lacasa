@@ -2,7 +2,7 @@
 
 html {
   font-family: sans-serif;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 1.4;
   -webkit-overflow-scrolling: touch;
 }
@@ -10,50 +10,171 @@ html {
 body {
   --bg: #fff;
   --text: #000;
-  --border: #000;
+  --link: blue;
+  --small: #00000050;
+  --active: black;
 
   margin: 0;
   -webkit-font-smoothing: antialiased;
+
   background-color: var(--bg);
   color: var(--text);
 }
-
-header {
-  display: flex;
-  align-items: center;
-  padding: 0 1rem;
-  border-bottom: 1px dashed var(--border);
-  margin-bottom: 2rem;
+body.dark {
+  --bg: #323232;
+  --text: #f0f0f0;
+  --link: #ffa8af;
+  --small: #ffffff50;
+  --active: #fff;
 }
-
+p {
+  margin-top: 0;
+  overflow: hidden;
+}
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--active);
+}
+a.active {
+  color: var(--active);
+  cursor: default;
+  text-decoration: none;
+}
 main {
-  margin: 0 auto;
-  max-width: 50rem;
   padding: 0 1rem;
+  margin-bottom: 3rem;
 }
-
-.logo__link {
-  margin-right: 2rem;
-}
-.logo__icon {
-  display: block;
-}
-
-nav {
+header {
   padding: 1rem 0;
 }
-
-nav ul {
+header ul {
   list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
-
-nav li {
+header li a {
+  display: inline-block;
+  padding: 0.5rem 0;
+}
+p + ol,
+p + ul {
+  margin-top: -0.75em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 1.45rem;
+}
+figure {
+  margin: 0;
+  padding: 0;
+}
+figure figcaption {
+  font-size: smaller;
+  font-style: italic;
+}
+@media (max-width: 1299px) {
+  .container {
+    padding: 0 1rem;
+    margin-right: auto;
+    max-width: 40rem;
+  }
+}
+.headerLink {
   display: inline-block;
   margin-right: 1rem;
 }
+.block {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+}
+.block_opacity {
+  opacity: 0.5;
+  color: gray;
+}
+.blockTitle {
+  margin-bottom: 0px;
+}
+.blockText {
+  margin-top: 0.5rem;
+}
+.blockYear {
+  font-weight: normal;
+  color: var(--small);
+}
+.blockSubtitle {
+  margin-top: 5px;
+  display: block;
+}
+.blockImage {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.blockPreview {
+  display: block;
+  height: 3rem;
+  margin-left: 1rem;
+}
 
-.menu__item.active {
-  background: red;
+@media (min-width: 1300px) {
+  main.container {
+    padding: 20px;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    margin-bottom: 0;
+    max-width: none;
+  }
+  h1:not(.visible) {
+    display: none;
+  }
+  header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 25vw;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .headerLink {
+    display: list-item;
+    font-size: 2.5rem;
+    line-height: 1;
+    font-weight: bold;
+    margin-right: 0;
+  }
+  .headerLink a {
+    padding: 0;
+    text-decoration: none;
+  }
+  .map.mapboxgl-map {
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.map {
+  height: 500px;
+}
+
+.gatsby-resp-image-figure .gatsby-resp-image-wrapper {
+  float: none;
+}
+.gatsby-resp-image-wrapper {
+  margin: 0 !important;
+  float: left;
 }

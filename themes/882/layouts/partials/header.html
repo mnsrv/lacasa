@@ -1,19 +1,19 @@
 <header>
-	<a href="{{ .Site.BaseURL }}" class="logo__link">
-		<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo__icon">
-			<title>{{ .Site.Title }}</title>
-			<path d="M22 25V31H14V25C14 22.7909 15.7909 21 18 21C20.2091 21 22 22.7909 22 25Z" stroke="black" stroke-width="2"/>
-			<path d="M18.8682 7.53499L31.4219 29.5039C31.8028 30.1705 31.3215 31 30.5536 31H5.44636C4.67854 31 4.19717 30.1705 4.57812 29.5039L17.1318 7.53499C17.5157 6.86318 18.4843 6.86317 18.8682 7.53499Z" stroke="black" stroke-width="2"/>
-		</svg>
-	</a>
 	<nav>
-		<ul>
+		<ul class="container">
 			{{ $currentPage := . }}
+			<li class="headerLink">
+				{{if eq .Permalink .Site.BaseURL }}
+					<span>home</span>
+				{{else}}
+					<a href="{{ .Site.BaseURL }}" class="logo__link">home</a>
+				{{end}}
+			</li>
 			{{ range .Site.Menus.main }}
 				{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
-					<li><span>{{ .Name }}</span></li>
+					<li class="headerLink"><span>{{ .Name }}</span></li>
 				{{else}}
-					<li><a href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a></li>
+					<li class="headerLink"><a href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a></li>
 				{{end}}
 			{{ end }}
 		</ul>

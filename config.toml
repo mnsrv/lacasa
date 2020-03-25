@@ -2,4 +2,15 @@ baseURL = "/"
 languageCode = "ru"
 title = "mansurov.me"
 theme = "882"
-sectionPagesMenu = "main"
+
+[menu]
+  [[menu.main]]
+    identifier = "book"
+    name = "books"
+    url = "/books/"
+    weight = -110
+  [[menu.main]]
+    identifier = "wish"
+    name = "wishlist"
+    url = "/wish/"
+    weight = -110

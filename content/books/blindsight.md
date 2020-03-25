@@ -1,6 +1,6 @@
 ---
 title: Blindsight
-date: 2020-03-15T14:52:04.000+00:00
-
+author: Peter Watts
+liked: true
+date: 2019-08-24
 ---
-Hello it's me

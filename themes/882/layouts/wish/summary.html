@@ -1,0 +1,15 @@
+<div class="block{{ if .Params.done }} block_opacity{{ end }}">
+  <div>
+    <h3 class="blockTitle">
+      {{ if .Params.done }}
+        <s>{{ .Title }} <span>${{.Params.price}}</span></s>
+      {{ else }}
+        {{ .Title }} <span>${{.Params.price}}</span>
+      {{ end }}
+    </h3>
+    <small class="blockSubtitle"><i>{{ .Params.brand }}</i></small>
+  </div>
+  {{ if .Params.image }}
+    <img src="{{ .Params.image }}" alt="{{ .Title }}" class="blockPreview">
+  {{ end }}
+</div>

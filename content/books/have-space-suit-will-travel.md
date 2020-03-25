@@ -1,7 +1,6 @@
 ---
-title: "Have Space Suit Will Travel"
-date: 2020-03-15T17:56:21+03:00
-draft: false
+title: Have Space Suit Will Travel
+author: Robert A. Heinlein
+liked: true
+date: 2019-02-08
 ---
-
-This is not draft
