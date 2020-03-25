@@ -9,6 +9,8 @@ sections:
   label: Wishlist
   create: documents
   match: "**/*"
+  templates:
+  - wish
 - type: directory
   path: content/books
   label: Books
