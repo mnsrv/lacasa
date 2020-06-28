@@ -1,4 +1,10 @@
 ---
 label: Category
 hide_body: false
-fields: []
+fields:
+- name: cover
+  type: file
+  config:
+    maxSize: 64
+  label: Cover
+  description: Cover image for category
