@@ -19,3 +19,5 @@ fields:
     required: false
   label: Caption
   description: Caption for cover image
+pages:
+- content/about.md
