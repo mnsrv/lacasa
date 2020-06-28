@@ -1,7 +1,12 @@
 ---
 label: Page
-hide_body: true
+hide_body: false
 fields:
+- name: title
+  type: text
+  config:
+    required: true
+  label: Title
 - name: cover
   type: file
   config:
