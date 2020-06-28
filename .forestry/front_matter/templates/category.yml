@@ -8,3 +8,9 @@ fields:
     maxSize: 64
   label: Cover
   description: Cover image for category
+- name: caption
+  type: text
+  config:
+    required: false
+  label: Caption
+  description: Caption for cover image
