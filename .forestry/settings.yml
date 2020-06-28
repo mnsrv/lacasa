@@ -5,6 +5,13 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
+  path: ''
+  label: Category
+  create: all
+  match: "**/*"
+  templates:
+  - category
+- type: directory
   path: content/wish
   label: Wishlist
   create: documents
