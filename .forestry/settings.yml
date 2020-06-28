@@ -6,11 +6,11 @@ webhook_url:
 sections:
 - type: directory
   path: content
-  label: Category
+  label: Page
   create: all
   match: "*"
   templates:
-  - category
+  - page
 - type: directory
   path: content/wish
   label: Wishlist
