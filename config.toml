@@ -1,16 +1,14 @@
 baseURL = "/"
 languageCode = "ru"
-title = "mansurov.me"
 theme = "882"
-
-[menu]
-  [[menu.main]]
-    identifier = "book"
-    name = "books"
-    url = "/books/"
-    weight = -110
-  [[menu.main]]
-    identifier = "wish"
-    name = "wishlist"
-    url = "/wish/"
-    weight = -110
+title = "mansurov.me"
+[[menu.main]]
+identifier = "wish"
+name = "wishlist"
+url = "/wish/"
+weight = 1
+[[menu.main]]
+identifier = "book"
+name = "books"
+url = "/books/"
+weight = 2
